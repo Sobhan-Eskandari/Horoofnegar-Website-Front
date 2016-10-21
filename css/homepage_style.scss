@@ -1,0 +1,676 @@
+@import url(fontiran.css);
+html,
+body,
+#heroimage {
+    width: 100%;
+    height: 100vh;
+    font-family: IRANSans !important;
+    font-weight: 300;
+    background-color: #E2E2E2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+    font-family: IRANSans !important;
+}
+
+
+/* -------------------------------- 
+
+Header Style
+
+-------------------------------- */
+
+#heroimage {
+    height: 100vh;
+    background: url('../images/header-image.png') center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    /* add */
+    justify-content: center;
+    /* add to align horizontal */
+    align-items: center;
+    /* add to align vertical */
+    img {
+        width: 320px;
+        height: 350px;
+    }
+}
+
+
+/* -------------------------------- 
+
+Our Abilities Section
+
+-------------------------------- */
+
+.ourAbiliities {
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        color: #0671b1;
+        margin-top: 5%;
+    }
+    p {
+        padding-right: 10%;
+        padding-left: 15%;
+        margin-top: 5%;
+        text-align: center;
+    }
+}
+
+.frame .slidee li {
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: 50px !important;
+    height: 100%;
+}
+
+.abilities {
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0px;
+        height: 100px;
+        margin-top: -180px;
+        color: #5F5F5F;
+    }
+    p {
+        color: gray;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        height: auto;
+        margin-top: 10%;
+    }
+    img {
+        margin-top: -100px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/* -------------------------------- 
+
+Macbook About us Style
+
+-------------------------------- */
+
+#macbook_image {
+    margin-bottom: 10px;
+}
+
+#macbook_title {
+    color: #0672b1;
+    direction: rtl;
+    text-align: justify;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#macbook_text {
+    color: white;
+    direction: rtl;
+    text-align: justify;
+    margin: 20px;
+}
+
+
+/* -------------------------------- 
+
+Social Networks Section
+
+-------------------------------- */
+
+#follow_SNs {
+    background-image: url(../images/share-bacjground.png);
+    background-size: 100% 100%;
+    height: 100vh;
+    .sn_row {
+        margin-top: 15%;
+        .sn_title {
+            direction: rtl;
+            text-align: right;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+            direction: rtl;
+            float: right;
+        }
+        .sn_image {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        #email_icon {
+            margin-top: 20px;
+            width: 90px;
+            height: 60px;
+        }
+    }
+}
+
+#follow_title {
+    color: black;
+    direction: rtl;
+    text-align: justify;
+    margin-bottom: -30px;
+    margin-top: 20%;
+    padding: 7%;
+    font-weight: bold;
+}
+
+#follow_text {
+    color: black;
+    direction: rtl;
+    text-align: justify;
+    margin: 20px;
+    margin-top: 0%;
+    padding: 7%;
+    margin-top: -30px;
+}
+
+#social_ntworks_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+        display: inline;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    li p {
+        color: white;
+        text-align: center;
+    }
+}
+
+
+/* -------------------------------- 
+
+Iphone About us Style
+
+-------------------------------- */
+
+#iphone_image {
+    margin-left: -120px;
+    height: 108%;
+    width: 100%;
+}
+
+#iphone_title {
+    color: white;
+    direction: rtl;
+    text-align: justify;
+    margin: 20px;
+    font-weight: bold;
+    padding-left: 70px;
+}
+
+#iphone_text {
+    color: white;
+    direction: rtl;
+    text-align: justify;
+    margin: 20px;
+    padding-left: 70px;
+}
+
+#iphone_aboutus {
+    background-image: url(../images/iphone-background.png);
+    background-size: 100% 100%;
+}
+
+
+/* -------------------------------- 
+
+Blog Post Style
+
+-------------------------------- */
+
+#section6 {
+    h1 {
+        padding-top: 3%;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+    .blog_line {
+        width: 20%;
+        border: none;
+        height: 2px;
+        /* Set the hr color */
+        color: white;
+        /* old IE */
+        background-color: white;
+        /* Modern Browsers */
+    }
+    .blog_line:nth-of-type(1) {
+        margin-left: 45%;
+    }
+    .blog_line:nth-of-type(2) {
+        margin-left: 33%;
+    }
+    .card {
+        height: 450px !important;
+        background-image: url(../images/Wordpress-Wallpapers.jpg);
+        background-size: cover;
+        border-radius: 20px;
+        border-top-right-radius: 0px;
+        width: 25%;
+        margin: 2%;
+        padding: 0px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+    .card:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    .card:nth-of-type(1) {
+        margin-left: 8%;
+    }
+}
+
+.cart_hover {
+    background-color: aliceblue;
+    opacity: 0.8;
+    margin-top: 84%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 1%;
+    padding-bottom: 0px;
+    h2,
+    p {
+        color: black;
+        text-align: center;
+    }
+    hr {
+        width: 60%;
+        border: none;
+        height: 2px;
+        /* Set the hr color */
+        color: black;
+        /* old IE */
+        background-color: black;
+        /* Modern Browsers */
+        margin-left: 20%;
+        padding: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 19px;
+    }
+    p {
+        margin-top: 1%;
+        font-size: 17px;
+        margin: 0px !important;
+    }
+    #cart_date {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .row {
+        margin-top: 10%;
+    }
+    .cart_comment {
+        display: flex;
+        direction: rtl;
+        img {
+            width: 25px;
+            height: 20px;
+            margin-right: 10px;
+            margin-bottom: 0px;
+        }
+        p {
+            margin-bottom: 0px;
+            padding-right: 15px;
+        }
+    }
+}
+
+
+/* -------------------------------- 
+
+Horoof Negar Team
+
+-------------------------------- */
+
+#horof_team {
+    text-align: center;
+    margin-top: 7%;
+    h1 {
+        color: black;
+        font-weight: 500;
+    }
+}
+
+#team_members {
+    margin-top: 2%;
+    p {
+        text-align: center;
+    }
+    img {
+        margin-top: 10%;
+        width: 40%;
+        height: 40%;
+    }
+    div {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
+
+/* -------------------------------- 
+
+Contact Us
+
+-------------------------------- */
+
+#contactus_title {
+    margin-top: 3%;
+    text-align: center;
+    h1 {
+        color: #0672b1;
+        font-weight: bold;
+    }
+}
+
+.contactus_mailandphone {
+    direction: rtl;
+    p {
+        font-weight: 500;
+        padding-top: 12px;
+        text-align: right;
+    }
+    //        img {
+    //        width: 60px;
+    //        height: 50px;
+    //    }
+    #mobile_icon {
+        width: 60px;
+        padding-left: 20px;
+    }
+}
+
+#contactus_mobile {
+    float: left;
+}
+
+div.contactus_form {
+    text-align: center;
+    margin-top: 5%;
+    direction: rtl;
+    p {
+        font-weight: bold;
+    }
+    .btn-default {
+        margin-top: 20px;
+        background-color: #0672b1;
+        color: white;
+        border-top-right-radius: 0px;
+        border-color: transparent;
+    }
+    .form-group {
+        margin-top: 4%;
+    }
+    .form-control {
+        margin-top: 10%;
+        background-color: transparent;
+        border: 0px solid rgba(0, 0, 0, .0000);
+        border-bottom: 1px solid black;
+        -webkit-box-shadow: inset 0 1px 1px transparent;
+        box-shadow: inset 0 1px 1px transparent;
+    }
+}
+
+input,
+textarea {
+    background-color: green;
+    color: #FFF;
+}
+
+
+/* -------------------------------- 
+
+Footer
+
+-------------------------------- */
+
+.footer {
+    h1 {
+        position: absolute;
+        right: 5%;
+        left: 5%;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 5%;
+    }
+    p {
+        position: absolute;
+        text-align: center;
+        color: aliceblue;
+        margin-top: 10%;
+        right: 5%;
+        left: 5%;
+    }
+}
+
+.footer_followus {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 220px;
+    right: 510px;
+    img {
+        padding: 20%;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#footer_line {
+    color: antiquewhite;
+    margin: 0px;
+}
+
+#under_footer {
+    div {
+        padding: 0px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    /* Container of Macbook and iPhone image to center them */
+    .img-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        /* add */
+        justify-content: center;
+        /* add to align horizontal */
+        align-items: center;
+        /* add to align vertical */
+    }
+    /* Container of Macbook and iPhone Text to center them */
+    .text-container {
+        padding: 5% 0;
+        float: right;
+    }
+    #macbook_title {
+        direction: rtl;
+        display: flex;
+        padding-top: 30%;
+        padding-right: 17%;
+    }
+    #macbook_text {
+        padding-right: 17%;
+    }
+    #iphone_title {
+        direction: rtl;
+        display: flex;
+        padding-top: 15%;
+        padding-right: 17%;
+    }
+    #iphone_text {
+        padding-right: 17%;
+        padding-bottom: 21%;
+    }
+}
+
+
+/* Between Md and Lg */
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    .footer_followus {
+        right: 410px;
+    }
+    .card {
+        margin: 0px !important;
+        width: 30% !important;
+        margin-left: 2% !important;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    /* image of team member */
+    #team_members {
+        img {
+            margin-top: 25%;
+            width: 60% !important;
+            height: 60% !important;
+        }
+    }
+    /* social network of footer */
+    .footer_followus {
+        right: 300px;
+    }
+    .card {
+        margin: 0px !important;
+        width: 31% !important;
+        margin-left: 2% !important;
+    }
+    .cart_hover {
+        margin-top: 250px;
+    }
+    #contctus_email {
+        height: 40px;
+        width: 60px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) and (max-width:768px) {
+    /* Title of team member */
+    #horof_team {
+        text-align: center;
+        margin-top: 15%;
+    }
+    #team_members {
+        img {
+            margin-top: 3%;
+            width: 25% !important;
+            height: 25% !important;
+        }
+    }
+    //    #section7 {
+    //        background-size: 130% 150%;
+    //    }
+    #section8 {
+        margin-top: -25px;
+    }
+    .footer {
+        p {
+            margin-top: 13%;
+        }
+    }
+    /* social network of footer */
+    .footer_followus {
+        right: 260px;
+    }
+    .card {
+        margin: 0px !important;
+        width: 44% !important;
+        margin-left: 4% !important;
+    }
+    .cart_hover {
+        margin-top: 230px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    /* Title of team member */
+    #horof_team {
+        text-align: center;
+        margin-top: 28%;
+    }
+    /* image of team member */
+    #team_members {
+        img {
+            margin-top: 3%;
+            width: 30% !important;
+            height: 30% !important;
+        }
+    }
+    //        #section7 {
+    //        background-image: url(../../images/about-us-background-partic.png);
+    //        background-size: 250% 200%;
+    //        height: 170%;
+    //    }
+    #section8 {
+        margin-top: -30px;
+    }
+    .footer {
+        p {
+            margin-top: 20%;
+        }
+    }
+    /* social network of footer */
+    .footer_followus {
+        right: 170px;
+    }
+    #contactus_title {
+        margin-top: 15%;
+    }
+    .frame {
+        margin-left: -30px;
+    }
+    .card {
+        width: 60% !important;
+        margin-left: 18% !important;
+    }
+    .cart_hover {
+        margin-top: 240px;
+    }
+}
