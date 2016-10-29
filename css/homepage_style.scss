@@ -116,8 +116,9 @@ Macbook About us Style
     color: #0672b1;
     direction: rtl;
     text-align: justify;
-    margin: 20px;
     font-weight: bold;
+    padding-right: 6%;
+    padding-left: 2%;
 }
 
 #macbook_text {
@@ -137,7 +138,6 @@ Social Networks Section
 #follow_SNs {
     background-image: url(../images/share-bacjground.png);
     background-size: 100% 100%;
-    height: 100vh;
     .sn_row {
         margin-top: 15%;
         .sn_title {
@@ -210,7 +210,8 @@ Iphone About us Style
 
 #iphone_image {
     margin-left: -120px;
-    height: 108%;
+    margin-top: -30px;
+    height: 780px;
     width: 100%;
 }
 
@@ -362,7 +363,14 @@ Horoof Negar Team
 #team_members {
     margin-top: 2%;
     p {
+        font-weight: 500;
         text-align: center;
+    }
+    p:nth-of-type(2) {
+        margin-top: -20px;
+    }
+    p:nth-of-type(4) {
+        margin-top: -20px;
     }
     img {
         margin-top: 10%;
@@ -393,16 +401,11 @@ Contact Us
 }
 
 .contactus_mailandphone {
-    direction: rtl;
     p {
         font-weight: 500;
         padding-top: 12px;
-        text-align: right;
+        text-align: center;
     }
-    //        img {
-    //        width: 60px;
-    //        height: 50px;
-    //    }
     #mobile_icon {
         width: 60px;
         padding-left: 20px;
@@ -419,13 +422,23 @@ div.contactus_form {
     direction: rtl;
     p {
         font-weight: bold;
+        color: black;
+        margin-top: -10px;
     }
     .btn-default {
         margin-top: 20px;
         background-color: #0672b1;
         color: white;
-        border-top-right-radius: 0px;
         border-color: transparent;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        width: 160px;
+        height: 40px;
+        font-family: IRANSans;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 0px;
+        font-weight: bold;
     }
     .form-group {
         margin-top: 4%;
@@ -438,12 +451,117 @@ div.contactus_form {
         -webkit-box-shadow: inset 0 1px 1px transparent;
         box-shadow: inset 0 1px 1px transparent;
     }
+    /* form starting stylings ------------------------------- */
+    form {
+        margin-top: 50px;
+    }
+    .group {
+        position: relative;
+        margin-bottom: 45px;
+    }
+    input {
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 350px;
+        border: none;
+        border-bottom: 1px solid #757575;
+    }
+    input:focus {
+        outline: none;
+    }
+    /* LABEL ==================================== */
+    label {
+        direction: rtl;
+        color: #999;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 220px;
+        top: 10px;
+        width: 150px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    #contactus_message {
+        left: 240px;
+    }
+    /* active state */
+    input:focus ~ label,
+    input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+    /* BOTTOM BARS ================================= */
+    .bar {
+        position: relative;
+        display: block;
+        width: 350px;
+    }
+    .bar:before,
+    .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    .bar:before {
+        left: 50%;
+    }
+    .bar:after {
+        right: 50%;
+    }
+    /* active state */
+    input:focus ~ .bar:before,
+    input:focus ~ .bar:after {
+        width: 50%;
+    }
+    /* HIGHLIGHTER ================================== */
+    /* active state */
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
 }
 
 input,
-textarea {
-    background-color: green;
-    color: #FFF;
+textare a {
+    background-color: transparent;
 }
 
 
@@ -493,8 +611,12 @@ Footer
 }
 
 #under_footer {
-    div {
-        padding: 0px;
+    text-align: center;
+    padding: 3%;
+    color: white;
+    background-color: #262626;
+    span {
+        color: #cb8407;
     }
 }
 
@@ -523,8 +645,8 @@ Footer
     #macbook_title {
         direction: rtl;
         display: flex;
-        padding-top: 30%;
-        padding-right: 17%;
+        padding-top: 23%;
+        padding-right: 20%;
     }
     #macbook_text {
         padding-right: 17%;
@@ -583,6 +705,24 @@ Footer
         height: 40px;
         width: 60px;
     }
+    #macbook_title {
+        padding-left: 3%;
+    }
+    #macbook_text {
+        padding: 1% 3% 1% 1%;
+    }
+    .contactus_form {
+        margin-left: 80px;
+        p {
+            margin-left: 100px;
+        }
+        .btn-default {
+            margin-left: 150px;
+        }
+        label {
+            left: 320px !important;
+        }
+    }
 }
 
 
@@ -601,9 +741,6 @@ Footer
             height: 25% !important;
         }
     }
-    //    #section7 {
-    //        background-size: 130% 150%;
-    //    }
     #section8 {
         margin-top: -25px;
     }
@@ -624,6 +761,21 @@ Footer
     .cart_hover {
         margin-top: 230px;
     }
+    #macbook_title {
+        padding-left: 5%;
+    }
+    .contactus_form {
+        margin-left: 80px;
+        p {
+            margin-left: 100px;
+        }
+        .btn-default {
+            margin-left: 150px;
+        }
+        label {
+            left: 250px !important;
+        }
+    }
 }
 
 
@@ -643,11 +795,6 @@ Footer
             height: 30% !important;
         }
     }
-    //        #section7 {
-    //        background-image: url(../../images/about-us-background-partic.png);
-    //        background-size: 250% 200%;
-    //        height: 170%;
-    //    }
     #section8 {
         margin-top: -30px;
     }
@@ -672,5 +819,20 @@ Footer
     }
     .cart_hover {
         margin-top: 240px;
+    }
+    #macbook_title {
+        padding-left: 5%;
+    }
+    .contactus_form {
+        margin-left: 120px;
+        p {
+            margin-left: -60px;
+        }
+        .btn-default {
+            margin-left: 0px;
+        }
+        label {
+            left: 90px !important;
+        }
     }
 }

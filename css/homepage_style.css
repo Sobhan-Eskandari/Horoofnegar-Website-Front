@@ -95,8 +95,9 @@ Macbook About us Style
   color: #0672b1;
   direction: rtl;
   text-align: justify;
-  margin: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-right: 6%;
+  padding-left: 2%; }
 
 #macbook_text {
   color: white;
@@ -111,8 +112,7 @@ Social Networks Section
 -------------------------------- */
 #follow_SNs {
   background-image: url(../images/share-bacjground.png);
-  background-size: 100% 100%;
-  height: 100vh; }
+  background-size: 100% 100%; }
   #follow_SNs .sn_row {
     margin-top: 15%; }
     #follow_SNs .sn_row .sn_title {
@@ -169,7 +169,8 @@ Iphone About us Style
 -------------------------------- */
 #iphone_image {
   margin-left: -120px;
-  height: 108%;
+  margin-top: -30px;
+  height: 780px;
   width: 100%; }
 
 #iphone_title {
@@ -292,7 +293,12 @@ Horoof Negar Team
 #team_members {
   margin-top: 2%; }
   #team_members p {
+    font-weight: 500;
     text-align: center; }
+  #team_members p:nth-of-type(2) {
+    margin-top: -20px; }
+  #team_members p:nth-of-type(4) {
+    margin-top: -20px; }
   #team_members img {
     margin-top: 10%;
     width: 40%;
@@ -314,15 +320,13 @@ Contact Us
     color: #0672b1;
     font-weight: bold; }
 
-.contactus_mailandphone {
-  direction: rtl; }
-  .contactus_mailandphone p {
-    font-weight: 500;
-    padding-top: 12px;
-    text-align: right; }
-  .contactus_mailandphone #mobile_icon {
-    width: 60px;
-    padding-left: 20px; }
+.contactus_mailandphone p {
+  font-weight: 500;
+  padding-top: 12px;
+  text-align: center; }
+.contactus_mailandphone #mobile_icon {
+  width: 60px;
+  padding-left: 20px; }
 
 #contactus_mobile {
   float: left; }
@@ -330,15 +334,33 @@ Contact Us
 div.contactus_form {
   text-align: center;
   margin-top: 5%;
-  direction: rtl; }
+  direction: rtl;
+  /* form starting stylings ------------------------------- */
+  /* LABEL ==================================== */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+  /* ANIMATIONS ================ */ }
   div.contactus_form p {
-    font-weight: bold; }
+    font-weight: bold;
+    color: black;
+    margin-top: -10px; }
   div.contactus_form .btn-default {
     margin-top: 20px;
     background-color: #0672b1;
     color: white;
-    border-top-right-radius: 0px;
-    border-color: transparent; }
+    border-color: transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 160px;
+    height: 40px;
+    font-family: IRANSans;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    font-weight: bold; }
   div.contactus_form .form-group {
     margin-top: 4%; }
   div.contactus_form .form-control {
@@ -348,11 +370,85 @@ div.contactus_form {
     border-bottom: 1px solid black;
     -webkit-box-shadow: inset 0 1px 1px transparent;
     box-shadow: inset 0 1px 1px transparent; }
-
+  div.contactus_form form {
+    margin-top: 50px; }
+  div.contactus_form .group {
+    position: relative;
+    margin-bottom: 45px; }
+  div.contactus_form input {
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #757575; }
+  div.contactus_form input:focus {
+    outline: none; }
+  div.contactus_form label {
+    direction: rtl;
+    color: #999;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 220px;
+    top: 10px;
+    width: 150px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  div.contactus_form #contactus_message {
+    left: 240px; }
+  div.contactus_form input:focus ~ label,
+  div.contactus_form input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE; }
+  div.contactus_form .bar {
+    position: relative;
+    display: block;
+    width: 350px; }
+  div.contactus_form .bar:before,
+  div.contactus_form .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  div.contactus_form .bar:before {
+    left: 50%; }
+  div.contactus_form .bar:after {
+    right: 50%; }
+  div.contactus_form input:focus ~ .bar:before,
+  div.contactus_form input:focus ~ .bar:after {
+    width: 50%; }
+  div.contactus_form input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease; }
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
 input,
-textarea {
-  background-color: green;
-  color: #FFF; }
+textare a {
+  background-color: transparent; }
 
 /* -------------------------------- 
 
@@ -391,8 +487,13 @@ Footer
   color: antiquewhite;
   margin: 0px; }
 
-#under_footer div {
-  padding: 0px; }
+#under_footer {
+  text-align: center;
+  padding: 3%;
+  color: white;
+  background-color: #262626; }
+  #under_footer span {
+    color: #cb8407; }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -417,8 +518,8 @@ Footer
   #macbook_title {
     direction: rtl;
     display: flex;
-    padding-top: 30%;
-    padding-right: 17%; }
+    padding-top: 23%;
+    padding-right: 20%; }
 
   #macbook_text {
     padding-right: 17%; }
@@ -463,7 +564,22 @@ Footer
 
   #contctus_email {
     height: 40px;
-    width: 60px; } }
+    width: 60px; }
+
+  #macbook_title {
+    padding-left: 3%; }
+
+  #macbook_text {
+    padding: 1% 3% 1% 1%; }
+
+  .contactus_form {
+    margin-left: 80px; }
+    .contactus_form p {
+      margin-left: 100px; }
+    .contactus_form .btn-default {
+      margin-left: 150px; }
+    .contactus_form label {
+      left: 320px !important; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   /* Title of team member */
@@ -492,7 +608,19 @@ Footer
     margin-left: 4% !important; }
 
   .cart_hover {
-    margin-top: 230px; } }
+    margin-top: 230px; }
+
+  #macbook_title {
+    padding-left: 5%; }
+
+  .contactus_form {
+    margin-left: 80px; }
+    .contactus_form p {
+      margin-left: 100px; }
+    .contactus_form .btn-default {
+      margin-left: 150px; }
+    .contactus_form label {
+      left: 250px !important; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   /* Title of team member */
@@ -527,6 +655,18 @@ Footer
     margin-left: 18% !important; }
 
   .cart_hover {
-    margin-top: 240px; } }
+    margin-top: 240px; }
+
+  #macbook_title {
+    padding-left: 5%; }
+
+  .contactus_form {
+    margin-left: 120px; }
+    .contactus_form p {
+      margin-left: -60px; }
+    .contactus_form .btn-default {
+      margin-left: 0px; }
+    .contactus_form label {
+      left: 90px !important; } }
 
 /*# sourceMappingURL=homepage_style.css.map */
