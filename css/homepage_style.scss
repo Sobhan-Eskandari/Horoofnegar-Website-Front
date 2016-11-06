@@ -20,6 +20,82 @@ textarea {
     font-family: IRANSans !important;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 45px !important;
+}
+
+
+/* -------------------------------- 
+
+Navbar Style
+
+-------------------------------- */
+
+#navbar-primary {
+    //    position: absolute;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    //    background-image: url(../images/navigation-background.png);
+    //    background-position: top;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#navbar-primary .container-fluid {
+    background-image: url(../images/navigation-background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 76% 120px;
+    margin-top: -23px;
+}
+
+#navbar-primary .navbar-nav {
+    //  background: #ededed;
+    width: 100%;
+    text-align: center;
+    > li {
+        display: inline-block;
+        float: none;
+        margin-top: 4px;
+        > a {
+            padding-left: 30px;
+            padding-right: 30px;
+            color: white;
+            padding-top: 21px;
+            font-weight: bold;
+        }
+    }
+    > li:hover {
+        background-color: aquamarine;
+        color: antiquewhite;
+    }
+    #logo-navbar-middle {
+        width: 55px;
+        height: 55px;
+        padding-bottom: 0px !important;
+        padding-bottom: 0px;
+        vertical-align: middle;
+    }
+    #logo_placeholder a {
+        height: auto;
+        padding: 0px !important
+    }
+    #logo_placeholder img {
+        vertical-align: middle;
+    }
+    .nav_item {
+        padding-top: 0px;
+    }
+}
+
 
 /* -------------------------------- 
 
@@ -137,7 +213,8 @@ Social Networks Section
 
 #follow_SNs {
     background-image: url(../images/share-bacjground.png);
-    background-size: 100% 100%;
+    background-size: 100% 100vh;
+    height: 100vh;
     .sn_row {
         margin-top: 15%;
         .sn_title {
@@ -776,6 +853,14 @@ Footer
             left: 250px !important;
         }
     }
+    /* Navbar in mobile size*/
+    #navbar-primary .container-fluid {
+        background-size: 120% 100px;
+        background-position: -100px;
+    }
+    #navbar-primary .container-fluid {
+        margin-top: -3px;
+    }
 }
 
 
@@ -834,5 +919,10 @@ Footer
         label {
             left: 90px !important;
         }
+    }
+    /* Navbar in mobile size*/
+    #navbar-primary .container-fluid {
+        background-size: 120% 100px;
+        background-position: -100px;
     }
 }

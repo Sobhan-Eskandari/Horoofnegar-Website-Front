@@ -77,6 +77,7 @@ Main components
 
 #section5 {
     background-color: white;
+    height: 100vh;
 }
 
 #section6 {
@@ -102,6 +103,16 @@ Main components
 #section9 {
     background-color: #262626;
     height: 300px;
+}
+
+#section3 h1,
+#section4 h1,
+#section5 h1,
+#section6 h1,
+#section7 h1,
+#section8 h1,
+#section9 h1 {
+    line-height: 45px;
 }
 
 #particles-js {

@@ -18,6 +18,64 @@ input,
 textarea {
   font-family: IRANSans !important; }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 45px !important; }
+
+/* -------------------------------- 
+
+Navbar Style
+
+-------------------------------- */
+#navbar-primary {
+  z-index: 4;
+  left: 0;
+  right: 0; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+
+#navbar-primary .container-fluid {
+  background-image: url(../images/navigation-background.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 76% 120px;
+  margin-top: -23px; }
+
+#navbar-primary .navbar-nav {
+  width: 100%;
+  text-align: center; }
+  #navbar-primary .navbar-nav > li {
+    display: inline-block;
+    float: none;
+    margin-top: 4px; }
+    #navbar-primary .navbar-nav > li > a {
+      padding-left: 30px;
+      padding-right: 30px;
+      color: white;
+      padding-top: 21px;
+      font-weight: bold; }
+  #navbar-primary .navbar-nav > li:hover {
+    background-color: aquamarine;
+    color: antiquewhite; }
+  #navbar-primary .navbar-nav #logo-navbar-middle {
+    width: 55px;
+    height: 55px;
+    padding-bottom: 0px !important;
+    padding-bottom: 0px;
+    vertical-align: middle; }
+  #navbar-primary .navbar-nav #logo_placeholder a {
+    height: auto;
+    padding: 0px !important; }
+  #navbar-primary .navbar-nav #logo_placeholder img {
+    vertical-align: middle; }
+  #navbar-primary .navbar-nav .nav_item {
+    padding-top: 0px; }
+
 /* -------------------------------- 
 
 Header Style
@@ -112,7 +170,8 @@ Social Networks Section
 -------------------------------- */
 #follow_SNs {
   background-image: url(../images/share-bacjground.png);
-  background-size: 100% 100%; }
+  background-size: 100% 100vh;
+  height: 100vh; }
   #follow_SNs .sn_row {
     margin-top: 15%; }
     #follow_SNs .sn_row .sn_title {
@@ -620,7 +679,15 @@ Footer
     .contactus_form .btn-default {
       margin-left: 150px; }
     .contactus_form label {
-      left: 250px !important; } }
+      left: 250px !important; }
+
+  /* Navbar in mobile size*/
+  #navbar-primary .container-fluid {
+    background-size: 120% 100px;
+    background-position: -100px; }
+
+  #navbar-primary .container-fluid {
+    margin-top: -3px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   /* Title of team member */
@@ -667,6 +734,11 @@ Footer
     .contactus_form .btn-default {
       margin-left: 0px; }
     .contactus_form label {
-      left: 90px !important; } }
+      left: 90px !important; }
+
+  /* Navbar in mobile size*/
+  #navbar-primary .container-fluid {
+    background-size: 120% 100px;
+    background-position: -100px; } }
 
 /*# sourceMappingURL=homepage_style.css.map */
