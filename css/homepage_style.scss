@@ -35,15 +35,6 @@ Navbar Style
 
 -------------------------------- */
 
-#navbar-primary {
-    //    position: absolute;
-    z-index: 4;
-    left: 0;
-    right: 0;
-    //    background-image: url(../images/navigation-background.png);
-    //    background-position: top;
-}
-
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -53,8 +44,8 @@ Navbar Style
     background-image: url(../images/navigation-background.png);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 76% 120px;
-    margin-top: -23px;
+    background-size: 76% 70px;
+    //    margin-top: -23px;
 }
 
 #navbar-primary .navbar-nav {
@@ -64,17 +55,16 @@ Navbar Style
     > li {
         display: inline-block;
         float: none;
-        margin-top: 4px;
         > a {
             padding-left: 30px;
             padding-right: 30px;
             color: white;
-            padding-top: 21px;
+            padding-top: 5px;
             font-weight: bold;
         }
     }
     > li:hover {
-        background-color: aquamarine;
+        background-color: transparent;
         color: antiquewhite;
     }
     #logo-navbar-middle {
@@ -135,7 +125,7 @@ Our Abilities Section
         font-weight: bold;
         text-align: center;
         color: #0671b1;
-        margin-top: 5%;
+        margin-top: 7%;
     }
     p {
         padding-right: 10%;
@@ -159,21 +149,21 @@ Our Abilities Section
         font-size: 20px;
         margin: 0px;
         height: 100px;
-        margin-top: -180px;
+        margin-top: -160px;
         color: #5F5F5F;
     }
     p {
         color: gray;
         text-align: center;
-        font-size: 15px;
-        padding: 20px;
-        height: auto;
+        padding: 10px;
         margin-top: 10%;
+        font-size: 15px;
+        padding-bottom: 0px;
     }
     img {
-        margin-top: -100px;
-        width: 150px;
-        height: 150px;
+        margin-top: -120px;
+        width: 125px;
+        height: 125px;
     }
 }
 
@@ -244,7 +234,8 @@ Social Networks Section
 #follow_title {
     color: black;
     direction: rtl;
-    text-align: justify;
+    direction: rtl;
+    text-align: center;
     margin-bottom: -30px;
     margin-top: 20%;
     padding: 7%;
@@ -259,6 +250,14 @@ Social Networks Section
     margin-top: 0%;
     padding: 7%;
     margin-top: -30px;
+}
+
+#follow_detail {
+    img {
+        /*--- Line --- */
+        width: 70%;
+        margin-left: 80px;
+    }
 }
 
 #social_ntworks_list {
@@ -312,6 +311,11 @@ Iphone About us Style
 #iphone_aboutus {
     background-image: url(../images/iphone-background.png);
     background-size: 100% 100%;
+    img {
+        /*--- Line --- */
+        width: 70%;
+        margin-left: 80px;
+    }
 }
 
 
@@ -430,14 +434,14 @@ Horoof Negar Team
 
 #horof_team {
     text-align: center;
-    margin-top: 7%;
+    margin-top: 4%;
     h1 {
         color: black;
         font-weight: 500;
     }
 }
 
-#team_members {
+.team_members {
     margin-top: 2%;
     p {
         font-weight: 500;
@@ -451,8 +455,8 @@ Horoof Negar Team
     }
     img {
         margin-top: 10%;
-        width: 40%;
-        height: 40%;
+        width: 37%;
+        height: 37%;
     }
     div {
         display: table-cell;
@@ -460,6 +464,8 @@ Horoof Negar Team
         text-align: center;
     }
 }
+
+#team_members:nth-of-type(1) {}
 
 
 /* -------------------------------- 
@@ -856,10 +862,18 @@ Footer
     /* Navbar in mobile size*/
     #navbar-primary .container-fluid {
         background-size: 120% 100px;
-        background-position: -100px;
     }
-    #navbar-primary .container-fluid {
-        margin-top: -3px;
+    .navbar-default .navbar-collapse {
+        background-color: #052546;
+    }
+    #navbar-primary .navbar-nav {
+        //  background: #ededed;
+        width: 100%;
+        text-align: center;
+        > li {
+            display: inherit;
+            float: none;
+        }
     }
 }
 
