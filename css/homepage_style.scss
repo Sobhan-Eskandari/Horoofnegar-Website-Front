@@ -28,7 +28,7 @@ h6 {
     line-height: 45px !important;
 }
 
-
+$primaryColor: #1abc9c;
 /* -------------------------------- 
 
 Navbar Style
@@ -108,7 +108,7 @@ Header Style
     align-items: center;
     /* add to align vertical */
     img {
-        width: 320px;
+        width: 400px;
         height: 350px;
     }
 }
@@ -124,7 +124,7 @@ Our Abilities Section
     h1 {
         font-weight: bold;
         text-align: center;
-        color: #0671b1;
+        color: $primaryColor;
         margin-top: 7%;
     }
     p {
@@ -179,7 +179,7 @@ Macbook About us Style
 }
 
 #macbook_title {
-    color: #0672b1;
+    color: #1abc9c;
     direction: rtl;
     text-align: justify;
     font-weight: bold;
@@ -765,6 +765,10 @@ Footer
 
 @media only screen and (min-width: 768px) and (max-width:992px) {
     /* image of team member */
+    #horof_team {
+        text-align: center;
+        margin-top: 10%;
+    }
     #team_members {
         img {
             margin-top: 25%;
@@ -805,6 +809,20 @@ Footer
         label {
             left: 320px !important;
         }
+    }
+    #iphone_title {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    #iphone_aboutus img {
+        width: 100%;
+    }
+    #iphone_text {
+        margin-top: 60px;
+        margin-bottom: 110px;
+    }
+    #iphone_image {
+        height: 750px;
     }
 }
 
@@ -875,6 +893,23 @@ Footer
             float: none;
         }
     }
+    .pages {
+        visibility: hidden;
+    }
+    #iphone_title {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    #iphone_aboutus img {
+        width: 100%;
+    }
+    #iphone_text {
+        margin-top: 60px;
+        margin-bottom: 110px;
+    }
+    #iphone_image {
+        height: 750px;
+    }
 }
 
 
@@ -884,7 +919,7 @@ Footer
     /* Title of team member */
     #horof_team {
         text-align: center;
-        margin-top: 28%;
+        margin-top: 8%;
     }
     /* image of team member */
     #team_members {
@@ -936,7 +971,40 @@ Footer
     }
     /* Navbar in mobile size*/
     #navbar-primary .container-fluid {
-        background-size: 120% 100px;
-        background-position: -100px;
+        background-size: 130% 150px;
+        background-position: -20px;
+    }
+    /* Navbar in mobile size*/
+    .navbar-default {
+        background-color: #052546 !important;
+    }
+    .navbar-default .navbar-collapse {
+        background-color: #052546;
+    }
+    #navbar-primary .navbar-nav {
+        //  background: #ededed;
+        width: 100%;
+        text-align: center;
+        > li {
+            display: inherit;
+            float: none;
+        }
+    }
+    .pages {
+        visibility: hidden;
+    }
+    #iphone_title {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    #iphone_aboutus img {
+        width: 100%;
+    }
+    #iphone_text {
+        margin-top: 60px;
+        margin-bottom: 110px;
+    }
+    #iphone_image {
+        height: 750px;
     }
 }

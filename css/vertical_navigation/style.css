@@ -68,7 +68,7 @@ Main components
 }
 
 #section3 {
-    background-color: #262626;
+    background-color: #222222;
 }
 
 #section4 {
@@ -77,7 +77,6 @@ Main components
 
 #section5 {
     background-color: white;
-    height: 100vh;
 }
 
 #section6 {
@@ -88,8 +87,6 @@ Main components
 }
 
 #section7 {
-    background-image: url(../../images/gigilmigili.png);
-    background-position: top;
     background-size: cover;
     background-color: white;
 }
