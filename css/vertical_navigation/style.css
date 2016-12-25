@@ -77,6 +77,7 @@ Main components
 
 #section5 {
     background-color: white;
+    height: 100vh !important;
 }
 
 #section6 {
@@ -217,7 +218,7 @@ Main components
 }
 
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-    background-color: black;
+    background-color: #1abc9c;
 }
 
 .no-touch #cd-vertical-nav .cd-dot {
@@ -226,7 +227,7 @@ Main components
     top: 8px;
     height: 28px;
     width: 28px;
-    border: 1px solid #000;
+    border: 1px solid #1abc9c;
     border-radius: 50%;
     background-color: transparent;
     -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
@@ -243,7 +244,7 @@ Main components
     margin-right: 0px;
     margin-top: 10px;
     padding: .4em .5em;
-    color: black;
+    color: #1abc9c;
     font-weight: 500;
     font-size: 16px;
     font-size: 0.875rem;

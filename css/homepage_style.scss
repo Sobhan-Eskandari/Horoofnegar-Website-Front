@@ -8,7 +8,9 @@ body,
     font-weight: 300;
     background-color: #E2E2E2;
 }
-
+html{
+    min-height:100%;
+}
 h1,
 h2,
 h3,
@@ -62,10 +64,13 @@ Navbar Style
             padding-top: 5px;
             font-weight: bold;
         }
+        >a:hover{
+            color: $primaryColor;
+        }
     }
     > li:hover {
         background-color: transparent;
-        color: antiquewhite;
+        color: $primaryColor;
     }
     #logo-navbar-middle {
         width: 55px;
@@ -85,7 +90,6 @@ Navbar Style
         padding-top: 0px;
     }
 }
-
 
 /* -------------------------------- 
 
@@ -108,7 +112,7 @@ Header Style
     align-items: center;
     /* add to align vertical */
     img {
-        width: 400px;
+        width: 410px;
         height: 350px;
     }
 }
@@ -219,8 +223,8 @@ Social Networks Section
         }
         .sn_image {
             img {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
             }
         }
         #email_icon {
@@ -234,11 +238,13 @@ Social Networks Section
 #follow_title {
     color: black;
     direction: rtl;
-    direction: rtl;
-    text-align: center;
+    text-align: right;
     margin-bottom: -30px;
-    margin-top: 20%;
-    padding: 7%;
+    margin-top: 30%;
+    padding: 1% 2% 1% 7%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    border-right:  3px solid $primaryColor;
     font-weight: bold;
 }
 
@@ -247,9 +253,12 @@ Social Networks Section
     direction: rtl;
     text-align: justify;
     margin: 20px;
-    margin-top: 0%;
-    padding: 7%;
-    margin-top: -30px;
+    padding: 1% 2% 1% 7%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    border-right:  3px solid $primaryColor;
+    line-height: 35px;
+    margin-top: 40px;
 }
 
 #follow_detail {
@@ -284,11 +293,19 @@ Iphone About us Style
 
 -------------------------------- */
 
-#iphone_image {
+#iphone_back_image {
     margin-left: -120px;
-    margin-top: -30px;
+    margin-top: -00px;
     height: 780px;
-    width: 100%;
+    width: 75%;
+    z-index: 1;
+}
+#iphone_image{
+    width: 50%;
+    height: 75%;
+    margin-left: 0px;
+    z-index: 0;
+    margin-left: -140px;
 }
 
 #iphone_title {
@@ -296,16 +313,27 @@ Iphone About us Style
     direction: rtl;
     text-align: justify;
     margin: 20px;
+    border-right:  3px solid #fff;
     font-weight: bold;
+    padding: 1% 2% 1% 7% !important;
+    margin-right: 10%;
     padding-left: 70px;
+    font-size: 29px;
+    margin-top: 10%;
 }
 
 #iphone_text {
     color: white;
     direction: rtl;
     text-align: justify;
+    text-align: right;
     margin: 20px;
+    border-right:  3px solid #fff;
+    padding: 1% 2% 1% 7% !important;
+    margin-right: 10%;
     padding-left: 70px;
+    margin-top: 5%;
+    margin-bottom: 35%;
 }
 
 #iphone_aboutus {
@@ -478,7 +506,7 @@ Contact Us
     margin-top: 3%;
     text-align: center;
     h1 {
-        color: #0672b1;
+        color: $primaryColor;
         font-weight: bold;
     }
 }
@@ -488,6 +516,7 @@ Contact Us
         font-weight: 500;
         padding-top: 12px;
         text-align: center;
+        color: aliceblue;
     }
     #mobile_icon {
         width: 60px;
@@ -498,19 +527,18 @@ Contact Us
 #contactus_mobile {
     float: left;
 }
-
 div.contactus_form {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1%;
     direction: rtl;
     p {
         font-weight: bold;
-        color: black;
+        color: aliceblue;
         margin-top: -10px;
     }
     .btn-default {
         margin-top: 20px;
-        background-color: #0672b1;
+        background-color: $primaryColor;
         color: white;
         border-color: transparent;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -547,7 +575,7 @@ div.contactus_form {
         display: block;
         width: 350px;
         border: none;
-        border-bottom: 1px solid #757575;
+        border-bottom: 1px solid #fff;
     }
     input:focus {
         outline: none;
@@ -555,7 +583,7 @@ div.contactus_form {
     /* LABEL ==================================== */
     label {
         direction: rtl;
-        color: #999;
+        color: aliceblue;
         font-weight: normal;
         position: absolute;
         pointer-events: none;
@@ -574,7 +602,7 @@ div.contactus_form {
     input:valid ~ label {
         top: -20px;
         font-size: 14px;
-        color: #5264AE;
+        color:$primaryColor;
     }
     /* BOTTOM BARS ================================= */
     .bar {
@@ -587,9 +615,9 @@ div.contactus_form {
         content: '';
         height: 2px;
         width: 0;
-        bottom: 1px;
+        bottom: 0px;
         position: absolute;
-        background: #5264AE;
+        background: $primaryColor;
         transition: 0.2s ease all;
         -moz-transition: 0.2s ease all;
         -webkit-transition: 0.2s ease all;
@@ -697,9 +725,9 @@ Footer
     text-align: center;
     padding: 3%;
     color: white;
-    background-color: #262626;
-    span {
-        color: #cb8407;
+    background-color: #222222;
+    span,a {
+        color: $primaryColor;
     }
 }
 

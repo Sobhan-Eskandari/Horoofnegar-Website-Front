@@ -114,16 +114,19 @@ $(document).ready(function () {
 
     // On Click of menu to scroll to section
 
-    $(".nav_item:nth-of-type(1)").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#section8").offset().top
-        }, 1000);
-    });
+//    $(".nav_item:nth-of-type(1)").click(function () {
+//        $('html, body').animate({
+//            scrollTop: $("#section8").offset().top
+//        }, 1000);
+//    });
+
+
     $(".nav li:nth-child(2)").click(function () {
         $('html, body').animate({
             scrollTop: $("#section7").offset().top
-        }, 1000);
+        }, 1500);
     });
+
     $(".nav li:nth-child(3)").click(function () {
         $('html, body').animate({
             scrollTop: $("#section1").offset().top
@@ -137,8 +140,9 @@ $(document).ready(function () {
     $(".nav li:nth-child(5)").click(function () {
         $('html, body').animate({
             scrollTop: $("#section1").offset().top
-        }, 1000);
+        }, 1500);
     });
+
 
 });
 

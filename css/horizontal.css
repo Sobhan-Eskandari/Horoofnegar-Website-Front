@@ -38,7 +38,7 @@ body {
     margin: 0 1px 0 0;
     padding: 0;
     color: #ddd;
-    border-right: 1px solid #0670b1;
+    border-right: 1px solid #1abc9c;
     text-align: center;
     cursor: pointer;
 }
@@ -100,7 +100,7 @@ body {
 }
 
 .pages li.active {
-    background: #0670b1;
+    background: #1abc9c;
 }
 
 
