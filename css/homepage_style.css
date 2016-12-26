@@ -265,15 +265,15 @@ Iphone About us Style
 #iphone_text {
   color: white;
   direction: rtl;
-  text-align: justify;
-  text-align: right;
   margin: 20px;
   border-right: 3px solid #fff;
   padding: 1% 2% 1% 7% !important;
   margin-right: 10%;
   padding-left: 70px;
+  line-height: 35px;
   margin-top: 5%;
-  margin-bottom: 35%; }
+  margin-bottom: 35%;
+  text-align: justify !important; }
 
 #iphone_aboutus {
   background-image: url(../images/iphone-background.png);
@@ -624,7 +624,8 @@ Footer
 
   #iphone_text {
     padding-right: 17%;
-    padding-bottom: 21%; } }
+    padding-bottom: 21%;
+    text-align: justify !important; } }
 /* Between Md and Lg */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .footer_followus {
